@@ -30,12 +30,12 @@ a {
     max-width: 700px;
 }
 
-.welcome-box .content h1{
+.welcome-box .content h1 {
     margin: 2rem;
     font-size: 2.5rem;
 }
 
-.welcome-box .content p{
+.welcome-box .content p {
     font-size: 20px;
 }
 
@@ -63,8 +63,11 @@ a {
     height: 100%;
 }
 
-.links ul {
+ul {
     list-style: none;
+}
+
+.links ul {
     display: flex;
     flex-direction: row;
 }
@@ -92,9 +95,19 @@ a {
     background-color: white;
 }
 
+.section-download-mac .container .btn.download-mac {
+    background-color: #7188d8;
+    color: white;
+}
+
 .btn.open-in-browser {
     color: white;
     background-color: #23272a;
+}
+
+.btn.sign-up {
+    background-color: #7188d8;
+    color: white;
 }
 
 section {
@@ -142,5 +155,84 @@ section .container .text {
 
 section.section-reverse .container {
     flex-direction: row-reverse;
+}
+
+section.big-section {
+    height: 600px;
+}
+
+section.big-section .container {
+    text-align: center;
+    flex-direction: column;
+}
+
+.section-download-mac {
+    height: 200px;
+}
+
+section.section-download-mac .container {
+    gap: 1.5rem;
+    flex-direction: column;
+}
+
+section.section-download-mac .invite-message {
+    height: 100%;
+    padding: 30px;
+    background-image: url("img/stars.svg");
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+footer {
+    background-color: #23272a;
+}
+
+.footer-top {
+    border-bottom: 1px solid rgba(113, 136, 216, 0.70);
+}
+
+footer .container {
+    padding: 3rem;
+}
+
+.column .ita-lang {
+    max-height: 15px;
+}
+
+.footer-list .column li {
+    list-style: none;
+    color: white;
+}
+
+.footer-list .column li:first-child {
+    color: #7188d8;
+}
+
+.footer-top {
+    max-width: 100%;
+}
+
+.footer-nav {
+    display: flex;
+    max-width: 100%;
+}
+
+.footer-list {
+    flex-direction: column;
+}
+
+.footer-nav .footer-list:first-child {
+    flex: 0 1 30%;
+}
+
+.footer-nav .footer-list:nth-last-child(n+2) {
+    flex: 0 1 calc(100% / 4);
+}
+
+footer .footer-bottom {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
 }
 
