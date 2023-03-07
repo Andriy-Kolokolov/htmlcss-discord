@@ -8,10 +8,16 @@ a {
     text-decoration: none;
 }
 
-.welcome-box {
-    padding: 3rem 0 4rem 0;
+.header {
+    background-color: #255de7;
 }
 
+.welcome-box {
+    padding: 3rem 0 4rem 0;
+    background-image: url("img/jumbo.png");
+    background-size: cover;
+    background-position: center;
+}
 
 .welcome-box .content {
     margin-inline: auto;
@@ -19,6 +25,14 @@ a {
     text-align: center;
     max-width: 500px;
 }
+
+.welcome-box .content .buttons {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
 .container {
     max-width: 1000px;
     margin-inline: auto;
@@ -36,10 +50,6 @@ a {
     height: 100%;
 }
 
-.logo {
-
-}
-
 .links ul {
     list-style: none;
     display: flex;
@@ -50,8 +60,28 @@ a {
     padding-inline: 1rem;
 }
 
-.login {
+.nav-bar .container .links a {
+    color: white;
+}
 
+/*    BUTTONS   */
+.btn {
+    padding: 0.5rem;
+    border-radius: 5rem;
+    cursor: pointer;
+}
+
+.btn.login {
+    background-color: white;
+}
+
+.btn.download-mac {
+    background-color: white;
+}
+
+.btn.open-in-browser {
+    color: white;
+    background-color: #23272a;
 }
 
 section .container {
@@ -71,7 +101,7 @@ section.section-reverse {
     background-color: lightgray;
 }
 
-section.section-reverse .container{
+section.section-reverse .container {
     flex-direction: row-reverse;
 }
 

@@ -1,18 +1,18 @@
 .nav-bar {
-    background-color: cyan;
+    /*background-color: cyan;*/
 }
 
 .nav-bar .container {
-    background-color: gold;
+    /*background-color: gold;*/
 }
 
 .welcome-box {
-    background-color: blue;
+    /*background-color: blue;*/
 }
 
 .welcome-box .content {
-    background-color: #f87f73;
-    min-height: 250px;
+    /*background-color: #f87f73;*/
+    /*min-height: 250px;*/
 }
 
 section {
