@@ -9,10 +9,13 @@ a {
     text-decoration: none;
 }
 
+ul {
+    list-style: none;
+}
+
 .header {
     background-color: #255de7;
 }
-
 
 .welcome-box {
     display: flex;
@@ -66,21 +69,21 @@ a {
     height: 100%;
 }
 
-ul {
-    list-style: none;
-}
-
-.links ul {
+.nav-bar .links ul {
     display: flex;
     flex-direction: row;
 }
 
-.links ul li {
+.nav-bar .links ul li {
     padding-inline: 1rem;
 }
 
 .nav-bar .container .links a {
     color: white;
+}
+
+.nav-bar .container .links a:hover {
+    color: salmon;
 }
 
 /*    BUTTONS   */
@@ -92,6 +95,11 @@ ul {
 
 .btn.login {
     background-color: white;
+}
+
+.btn.login:hover {
+    background-color: salmon;
+    color: white;
 }
 
 .btn.download-mac {
@@ -137,11 +145,11 @@ section .container .text {
     flex: 0 1 35%;
 }
 
-.text h2 {
+.container .text h2 {
     font-size: 2.5rem;
 }
 
-.text p {
+.container .text p {
     margin-top: 1rem;
     font-size: 1rem;
 }
@@ -169,7 +177,7 @@ section.big-section .container {
     flex-direction: column;
 }
 
-.section-download-mac {
+section.section-download-mac {
     height: 200px;
 }
 
